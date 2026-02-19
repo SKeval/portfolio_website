@@ -6,13 +6,13 @@
 
 <p align="center">
   <a href="mailto:skeval1601@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a>
-  <a href="https://www.linkedin.com/in/YOUR_LINKEDIN"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+  <a href="https://www.linkedin.com/in/keval-savaliya/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
   <img src="https://img.shields.io/badge/Location-Chemnitz%2C%20Germany-informational?style=for-the-badge"/>
 </p>
 
 ---
 
-## 🧠 What I Build
+## 🧠 What I Built
 
 I build **production-ready AI systems** — from RAG pipelines and multi-agent architectures to MCP servers and ML REST APIs. My focus is on AI that is reliable, integrable, and actually ships.
 
@@ -44,21 +44,21 @@ focus = {
 ---
 
 ### 🔍 [RAG + Multi-Agent Knowledge System](https://github.com/SKeval/rag-multi-agent-system)
-> AI-powered assistant using Retrieval-Augmented Generation with a modular multi-agent architecture. Improved response reliability by 40% over single-agent baseline.
+> AI-powered assistant using Retrieval-Augmented Generation with a modular multi-agent architecture. Improved response reliability by 40% over a single-agent baseline.
 
 `Python` `LangChain` `Vector DB` `LLMs` `Prompt Engineering`
 
 ---
 
-### 🧬 [BERT NLP Classification System](https://github.com/SKeval/bert-nlp-classifier)
-> Text classification system using fine-tuned BERT transformers achieving **81.5% F1-score**. Includes hyperparameter tuning, evaluation pipeline, and a Streamlit demo UI.
+### 🧬 [BERT NLP Classification System](https://github.com/SKeval/disaster-tweet-detection)
+> Text classification system using fine-tuned BERT transformers, achieving **81.5% F1-score**. Includes hyperparameter tuning, evaluation pipeline, and a Streamlit demo UI.
 
 `Python` `PyTorch` `Transformers` `Streamlit` `scikit-learn`
 
 ---
 
 ### ⚙️ [End-to-End ML Service with REST API](https://github.com/SKeval/ml-rest-api)
-> Production-ready ML pipeline exposed via FastAPI, containerized with Docker. Real-time predictions with clean architecture designed for extensibility.
+> Production-ready ML pipeline exposed via FastAPI, containerized with Docker. Real-time predictions with a clean architecture designed for extensibility.
 
 `Python` `XGBoost` `FastAPI` `Docker` `REST API`
 
