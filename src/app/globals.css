@@ -1,26 +1,90 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+:root,
+[data-theme="dark"] {
+  --bg: #080808;
+  --bg-surface: #111111;
+  --bg-surface-2: #1a1a1a;
+  --border: #1f1f1f;
+  --border-hover: rgba(212, 117, 42, 0.4);
+  --text-primary: #f0ede8;
+  --text-secondary: #7a6050;
+  --accent: #d4752a;
+  --accent-hover: #e8823a;
+  --accent-subtle: rgba(212, 117, 42, 0.08);
+  --number-opacity: 0.04;
+}
+
+[data-theme="light"] {
+  --bg: #f5f0ea;
+  --bg-surface: #ede8e0;
+  --bg-surface-2: #e0d8ce;
+  --border: #d4c8b8;
+  --border-hover: rgba(180, 90, 20, 0.4);
+  --text-primary: #1a1208;
+  --text-secondary: #8b6a50;
+  --accent: #b85a1a;
+  --accent-hover: #c96820;
+  --accent-subtle: rgba(180, 90, 20, 0.08);
+  --number-opacity: 0.06;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-background: var(--bg);
+  --color-surface: var(--bg-surface);
+  --color-surface-2: var(--bg-surface-2);
+  --color-border: var(--border);
+  --color-border-hover: var(--border-hover);
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-accent-subtle: var(--accent-subtle);
+  --color-foreground: var(--text-primary);
+  --color-muted: var(--text-secondary);
+  --font-display: var(--font-space-grotesk);
+  --font-sans: var(--font-inter);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
+  transition: background-color 0.4s ease, color 0.4s ease;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--bg);
+  background-image: radial-gradient(
+    ellipse at 50% 0%,
+    var(--accent-subtle) 0%,
+    transparent 60%
+  );
+  color: var(--text-primary);
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.section-transparent {
+  background: transparent !important;
+}
+
+@keyframes email-glitch {
+  0% {
+    transform: translateX(0);
+  }
+  30% {
+    transform: translateX(-2px);
+  }
+  60% {
+    transform: translateX(2px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.motion-glitch:hover {
+  animation: email-glitch 0.3s ease-in-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .motion-glitch:hover {
+    animation: none;
+  }
 }
